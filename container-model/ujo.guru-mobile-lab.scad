@@ -137,9 +137,9 @@ FEATURES = [
      window(wall=RIGHT, x=2.50, y=0.6, width=1.5, height=1.7),
      window(wall=LEFT, x=0.75, y=1.6, width=1.5, height=0.5),
      window(wall=LEFT, x=3.75, y=1.6, width=1.5, height=0.5),
-     text_int(text="ujo.guru mobilelab", x=1.7, y=0.7, size=6),
-     text_int(text="v.0.1.1", x=4.8, y=0.7, size=4),
-     text_int(text=str("scale: 1:",SCALE), x=4.8, y=0.5, size=4)
+     text_int(text="ujo.guru mobilelab", x=1.7, y=0.7, size=3),
+     text_int(text="v.0.1.1", x=4.8, y=0.7, size=2),
+     text_int(text=str("scale: 1:",SCALE), x=4.8, y=0.5, size=2)
 ];
 
 // removed features
