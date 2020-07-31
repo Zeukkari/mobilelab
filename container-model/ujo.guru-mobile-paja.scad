@@ -34,7 +34,7 @@ EXT_WIDTH  = 2.44;      // Standard width:   2.44
 EXT_HEIGHT = 2.59;      // Standard heights: 2.59 or 2.90 for High Cube
 
 // Model settings
-SCALE = 30;  // 1:<SCALE> sizing
+SCALE = 50;  // 1:<SCALE> sizing
 THICKNESS_WALL = 1.5;        // External wall in mm
 THICKNESS_WALL_INT = 1.5;   // Internal wall in mm
 TOLERANCE = 0.1; // Tolerance for assembly of walls (excluding frame)
@@ -79,7 +79,7 @@ STYLE_FILL="none";
 //           printable this way, but interior walls will 
 //           not work and will be ignored.
 // "custom": custom placement for every part
-ASSEMBLY_STYLE = "lid";
+ASSEMBLY_STYLE = "parts";
 // Parts displacement distance in mm
 PART_D = 3; 
 
