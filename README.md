@@ -7,7 +7,7 @@ Requirements: openscad
 ## generate step file 
 
 ``` bash
-openscad -o lab-osat.stp ujo.guru-mobile-lab.scad
+openscad -o lab-osat.stl ujo.guru-mobile-lab.scad
 ```
 
 ## generate thumbnail 
