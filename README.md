@@ -1,8 +1,8 @@
 # mobilelab
 
-Container laboratory model for development purpoce
+Container laboratory model for planning and show up purposes
 
-Requires: openscad
+Requirements: openscad
 
 ## generate step file 
 
