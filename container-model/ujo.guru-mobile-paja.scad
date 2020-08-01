@@ -109,12 +109,12 @@ ASSEMBLY = ASSEMBLY_STYLE == "box" ?    [0,0,0,0,0,0] :
            ASSEMBLY_STYLE == "custom" ? customassembly() : 
            [0,0,0,0,0,0] ;
 
-FRAME_INSET_X = 0.02;   // X-direction Inset of vertical frame (vis-a-vis corner pieces) 
+FRAME_INSET_X = 0.01;   // X-direction Inset of vertical frame (vis-a-vis corner pieces) 
 FRAME_INSET_Y = 0.02;   // X-direction Inset of vertical frame (vis-a-vis corner pieces) 
 FRAME_THICKNESS = 0.10; // Frame thickness 
 
-TOP_INSET = 0.02; // Z-direction offset of top panels
-SIDE_INSET = 0.03; // Y-direction offset of side panels
+TOP_INSET = 0.01; // Z-direction offset of top panels
+SIDE_INSET = 0.025; // Y-direction offset of side panels
 SIDE_I = m2mm(SIDE_INSET); // Convert to scale (this needs to be placed here)
 
 /* Supplementary architectural features of the container:
@@ -140,14 +140,6 @@ FEATURES = [
      text_int(text=str("scale: 1:",SCALE), x=4.8, y=0.5, size=2)
 ];
 
-// removed features
-//     window(wall=BACK, x=0.3, y=2.05, width=1.8, height=0.3),
-//     window(wall=FRONT, x=0.3, y=1.05, width=1.8, height=1.8),
-//     wall(dir="x", x=1, y=1.2, length=1.5),
-//     wall(dir="y", x=2.5, y=0.75, length=1.0),
-//     text_int(text="Robe", x=0.25, y=2.1, size=6),
-//     text_int(text="Bed 1", x=3.0, y=1.7, size=8),
-
 // Color the frame differently
 FRAMECOLOR="red";
 
@@ -159,7 +151,7 @@ FRAMECOLOR="red";
 // Corner casting body
 ISO_1161_CORNER_HEIGHT = 0.12;
 ISO_1161_CORNER_LENGTH = 0.18;
-ISO_1161_CORNER_WIDTH = 0.16;
+ISO_1161_CORNER_WIDTH = 0.10;
 
 // Corner casting body thickness
 // So far we have not made the corner castings hollow yet,
@@ -169,9 +161,9 @@ ISO_1161_CORNER_THICKNESS = 0.028;
 // Corner casting hole dimensions
 // X and Y holes are identical
 ISO_1161_CORNER_Y_HOLE_LENGTH = 0.078;
-ISO_1161_CORNER_Y_HOLE_WIDTH = 0.051;
-ISO_1161_CORNER_Z_HOLE_LENGTH = 0.124;
-ISO_1161_CORNER_Z_HOLE_WIDTH = 0.0635;  
+ISO_1161_CORNER_Y_HOLE_WIDTH = 0;
+ISO_1161_CORNER_Z_HOLE_LENGTH = 0;
+ISO_1161_CORNER_Z_HOLE_WIDTH = 0.0;  
 
 // Corner casting holes
 ISO_1161_CORNER_X_OFFSET = 0.089;  
@@ -195,7 +187,7 @@ ISO_cyo = m2mm(ISO_1161_CORNER_Y_OFFSET);
 ISO_czo = m2mm(ISO_1161_CORNER_Z_OFFSET);
 
 // Measurements of simple container door
-DOOR_INSET = m2mm(0.1); // Doors are inset 10 cm
+DOOR_INSET = m2mm(0.025); // Doors are inset 10 cm
 SEPARATOR_WIDTH = m2mm(0.1);
 SEPARATOR_DEPTH = THICKNESS_WALL;
 HINGE_LENGTH = m2mm(0.5); // 4 hinges
